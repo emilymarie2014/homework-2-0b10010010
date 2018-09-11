@@ -6,4 +6,9 @@ read varname
 a=`echo "scale=3;($varname - 32) * 5/9"| bc`
 echo $varname degrees Fahrenheit in degrees Celsius is: $a degrees Celsius
 
+
+#Adding conversion to kelvin
+
+K=`echo "scale=2;$varname + 273.15" | bc`
+echo "$varname degrees Fahrenheit in Kelven is: $K Kelvin"
 exit 0
